@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Workshop Registration System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Student Workshop Registration System</h1>
+    <p>CSE472 &mdash; Web and Internet Programming Lab</p>
+  </header>
+
+  <main>
+
+    <!-- Workshop information section -->
+    <section class="card">
+      <h2>Workshop Information</h2>
+      <p><strong>Workshop Name:</strong> Web Development Basics</p>
+      <p><strong>Date:</strong> 20th September, 2026</p>
+      <p><strong>Venue:</strong> CSE Lab 3, Southeast University</p>
+
+      <!-- Interaction 1: Registration status -->
+      <button type="button" onclick="checkRegistration()">
+        Check Registration Status
+      </button>
+      <p id="registrationStatus">Click the button to check the status.</p>
+
+      <!-- Interaction 2: Seat availability -->
+      <button type="button" onclick="checkSeats()">
+        Check Seat Availability
+      </button>
+      <p id="seatMessage">Seat information will appear here.</p>
+
+      <!-- Independent interaction: Venue reminder -->
+      <button type="button" onclick="showVenueReminder()">
+        Show Venue Reminder
+      </button>
+      <p id="venueMessage">Click the button to see the venue reminder.</p>
+    </section>
+
+    <!-- Registration form section -->
+    <section class="card">
+      <h2>Registration Form</h2>
+      <form>
+        <label for="studentName">Full Name</label>
+        <input type="text" id="studentName" name="studentName" required>
+
+        <label for="studentId">Student ID</label>
+        <input type="text" id="studentId" name="studentId" required>
+
+        <label for="studentEmail">Email Address</label>
+        <input type="email" id="studentEmail" name="studentEmail" required>
+      </form>
+
+      <!-- Interaction 3: Personal greeting -->
+      <button type="button" onclick="showGreeting()">
+        Show Greeting
+      </button>
+      <p id="greetingMessage"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Southeast University &mdash; CSE472 Lab 03</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
