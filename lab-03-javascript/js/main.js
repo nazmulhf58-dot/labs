@@ -456,7 +456,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function validateField(input, errorElement, condition) {
-    const group = input.closest('.form-group');
+    if (!input) return false;
+    const group = typeof input.closest === 'function' ? input.closest('.form-group') : null;
+    if (!group) {
+      return !!condition;
+    }
+
     if (!condition) {
       group.classList.add('has-error');
       return false;
@@ -513,13 +518,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // Enter loading state
-      submitBtn.classList.add('loading');
-      submitBtn.disabled = true;
+      if (submitBtn) {
+        submitBtn.classList.add('loading');
+        submitBtn.disabled = true;
+      }
 
       // Simulate asynchronous transmission
       setTimeout(() => {
-        submitBtn.classList.remove('loading');
-        submitBtn.disabled = false;
+        if (submitBtn) {
+          submitBtn.classList.remove('loading');
+          submitBtn.disabled = false;
+        }
         contactForm.reset();
 
         // Clear error states
@@ -576,7 +585,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 300);
     };
 
-    closeBtn.addEventListener('click', dismiss);
+    if (closeBtn) closeBtn.addEventListener('click', dismiss);
     setTimeout(dismiss, duration);
   }
 
