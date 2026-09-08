@@ -1,9 +1,8 @@
-// ---------------------------------------------------
 // Lab 03: JavaScript Foundations and Simple Interaction
 // Student Workshop Registration System
-// ---------------------------------------------------
 
-// Variable storing the number of available seats
+
+// Variable storing the number 
 let availableSeats = 12;
 
 // Interaction 1: Check registration status
