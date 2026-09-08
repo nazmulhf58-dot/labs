@@ -1,11 +1,6 @@
-/* ==========================================================================
-   NAZMUL HASSAN - PERSONAL PORTFOLIO STYLESHEET
-   100% Vanilla CSS3 • CSE 471: Web and Internet Programming (Summer 2026)
-   ========================================================================== */
 
-/* --------------------------------------------------------------------------
    1. DESIGN TOKENS & CSS VARIABLES
-   -------------------------------------------------------------------------- */
+   ---------------------------------------- */
 :root {
   /* Color Scheme Declaration for Native Controls (Modern Web Guidance) */
   color-scheme: light dark;
@@ -97,9 +92,9 @@
   --ambient-bottom: rgba(139, 92, 246, 0.06);
 }
 
-/* --------------------------------------------------------------------------
+/* ------------------
    2. RESET & GLOBAL STYLES
-   -------------------------------------------------------------------------- */
+   --------------------- */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -122,14 +117,9 @@ body {
   transition: background-color var(--transition-normal), color var(--transition-normal);
   min-height: 100vh;
 }
-/* ==========================================================================
-   NAZMUL HASSAN - PERSONAL PORTFOLIO STYLESHEET
-   100% Vanilla CSS3 • CSE 471: Web and Internet Programming (Summer 2026)
-   ========================================================================== */
 
-/* --------------------------------------------------------------------------
    1. DESIGN TOKENS & CSS VARIABLES
-   -------------------------------------------------------------------------- */
+   -------------------------------- */
 :root {
   /* Color Scheme Declaration for Native Controls (Modern Web Guidance) */
   color-scheme: light dark;
@@ -221,9 +211,9 @@ body {
   --ambient-bottom: rgba(139, 92, 246, 0.06);
 }
 
-/* --------------------------------------------------------------------------
+/* -------------------------
    2. RESET & GLOBAL STYLES
-   -------------------------------------------------------------------------- */
+   ------------------------- */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -510,9 +500,9 @@ button, input, textarea {
   width: 100%;
 }
 
-/* --------------------------------------------------------------------------
+/* ---------------------------
    3. FLOATING PILL NAVIGATION HEADER
-   -------------------------------------------------------------------------- */
+   ---------------------------------*/
 .site-header {
   position: fixed;
   top: 1.25rem;
@@ -761,9 +751,9 @@ button, input, textarea {
   border-top: 1px solid var(--border-subtle);
 }
 
-/* --------------------------------------------------------------------------
+/* ---------------
    4. HERO SECTION
-   -------------------------------------------------------------------------- */
+   --------------- */
 .hero-section {
   padding-top: calc(var(--header-height) + 4rem);
   padding-bottom: 4rem;
@@ -886,9 +876,9 @@ button, input, textarea {
   background-color: var(--border-subtle);
 }
 
-/* --------------------------------------------------------------------------
+/* --------------------------------------
    5. IDENTITY PROFILE CARD (rsriad.dev inspired)
-   -------------------------------------------------------------------------- */
+   --------------------------------------- */
 .hero-card-column {
   display: flex;
   justify-content: center;
