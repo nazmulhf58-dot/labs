@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Workshop Registration System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>Student Workshop Registration System</h1>
+</header>
+
+<main>
+<section>
+<h2>Workshop Registration</h2>
+
+<form id="registrationForm">
+<label for="studentName">Full Name</label>
+<input type="text" id="studentName" name="studentName" required>
+
+<label for="studentId">Student ID</label>
+<input type="text" id="studentId" name="studentId" required>
+
+<label for="studentEmail">Email Address</label>
+<input type="email" id="studentEmail" name="studentEmail" required>
+
+<label for="workshop">Workshop</label>
+<select id="workshop" name="workshop" required>
+<option value="">Select a workshop</option>
+<option value="HTML Basics">HTML Basics</option>
+<option value="CSS Basics">CSS Basics</option>
+<option value="JavaScript Basics">JavaScript Basics</option>
+</select>
+
+<button type="button" onclick="submitRegistration()">Register</button>
+<p id="formMessage"></p>
+</form>
+</section>
+
+<section>
+<h2>JSON Output</h2>
+<pre id="jsonOutput">No registration saved yet.</pre>
+</section>
+
+<section>
+<h2>Saved Registration</h2>
+<button type="button" onclick="showSavedRegistration()">Show Saved Registration</button>
+<button type="button" onclick="clearRegistration()">Clear Saved Registration</button>
+<p id="savedMessage"></p>
+</section>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
