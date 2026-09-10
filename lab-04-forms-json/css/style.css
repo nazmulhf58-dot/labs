@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: #222222;
+}
+
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 24px;
+  padding: 20px;
+  border: 1px solid #cccccc;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+}
+
+input, select {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  padding: 10px;
+  margin: 6px 0 12px;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 8px 4px 8px 0;
+}
+
+pre {
+  padding: 12px;
+  background-color: #f3f5f7;
+  white-space: pre-wrap;
+}
