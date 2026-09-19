@@ -1,9 +1,7 @@
 const registerForm = document.getElementById("registerForm");
-
 registerForm.addEventListener("submit", function (event) {
   event.preventDefault();
-
-  const name = document.getElementById("name").value;
+ const name = document.getElementById("name").value;
   const studentId = document.getElementById("studentId").value;
   const email = document.getElementById("email").value;
 
@@ -28,7 +26,7 @@ registerForm.addEventListener("submit", function (event) {
 });
 
 
-// Request workshop details from the local JSON file
+// Req workshop details..
 async function loadWorkshop() {
   document.getElementById("loadMessage").textContent = "Loading...";
 
@@ -57,7 +55,6 @@ async function loadWorkshop() {
   }
 }
 
-// Request one sample user from the public practice API
 async function loadSampleUser() {
   const response = await fetch(
     "https://jsonplaceholder.typicode.com/users/1"
