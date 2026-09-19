@@ -1,5 +1,5 @@
 // Lab 03: JavaScript
-// Student Workshop Registration System 
+// Student Workshop Reg.. System 
 let availableSeats = 12;
 
 // Interaction 1: Check reg..status
@@ -7,7 +7,6 @@ function checkRegistration() {
   let message = document.getElementById("registrationStatus");
   message.textContent = "Registration is currently open.";
 }
-
 // Interaction 2: Check seat avail...
 function checkSeats() {
   let message = document.getElementById("seatMessage");
