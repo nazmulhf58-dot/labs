@@ -19,7 +19,7 @@ function checkSeats() {
   }
 }
 
-// Interaction 3: Show a personalised greeting
+// Interaction 3: Show a personal..get..
 function showGreeting() {
   let name = document.getElementById("studentName").value;
   let output = document.getElementById("greetingMessage");
@@ -30,8 +30,6 @@ function showGreeting() {
     output.textContent = "Welcome, " + name + "!";
   }
 }
-
-// Independent improvement: Show a simple venue reminder
 function showVenueReminder() {
   let message = document.getElementById("venueMessage");
   message.textContent = "Reminder: The workshop will be held at CSE Lab 3, Southeast University.";
