@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEU Tech Event Information and Registration Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+    <h1>SEU Tech Event Information and Registration Page</h1>
+    <p>A five-day technology event for Southeast University students</p>
+    <p>Organized by the Department of Computer Science and Engineering</p>
+    <p>
+        Course: CSE 472 (Web Internet& Programming) | Lab 02: HTML<br>
+        Submitted to: Abid Ahmed,Lecturer,Dept. of CSE <br>
+        Submitted by: Nazmul Hassan(2022000000273)  | Section:01
+    </p>
+</header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#topics">Topics</a> |
+        <a href="#schedule">Schedule</a> |
+        <a href="#register">Register</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+
+            <div>
+                <h2>About the Event</h2>
+
+                <p>
+                    The SEU Tech Event is designed for students who are
+                    interested in technology and web development.
+                </p>
+
+                <p>
+                    The <span>main goal</span> of this event is to help
+                    students learn about modern technology and improve
+                    their technical knowledge.
+                </p>
+            </div>
+
+            <div>
+                <h3>Event Details</h3>
+
+                <p>
+                    The event will be arranged by the Department of
+                    Computer Science and Engineering.
+                </p>
+
+                <a href="https://www.seu.edu.bd" target="_blank">
+                    Visit Southeast University Website
+                </a>
+            </div>
+
+            <div>
+                <h3>Event Image</h3>
+
+                <img src="images/campus.jpg"
+                     alt="Southeast University campus"
+                     width="350">
+            </div>
+
+        </section>
+
+
+        <section id="topics">
+
+            <h2>Event Topics</h2>
+
+            <h3>Topics Covered</h3>
+
+            <ul>
+                <li>Web Development</li>
+                <li>Artificial Intelligence</li>
+                <li>Database Management</li>
+                <li>Internet Technology</li>
+            </ul>
+
+            <h3>Participation Steps</h3>
+
+            <ol>
+                <li>Read the event information</li>
+                <li>Check the event schedule</li>
+                <li>Complete the registration form</li>
+                <li>Attend the event</li>
+            </ol>
+
+            <h3>Detailed Topics</h3>
+
+            <ul>
+                <li>Web Development
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ol>
+                </li>
+
+                <li>Technology
+                    <ul>
+                        <li>Artificial Intelligence</li>
+                        <li>Database</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </section>
+
+
+        <section id="schedule">
+
+            <h2>Event Schedule</h2>
+
+            <table border="1">
+
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Topic</th>
+                </tr>
+
+                <tr>
+                    <td>Sunday</td>
+                    <td>10:00 AM - 12:00 PM</td>
+                    <td>HTML and Web Development</td>
+                </tr>
+
+                <tr>
+                    <td>Monday</td>
+                    <td>10:00 AM - 12:00 PM</td>
+                    <td>CSS and Web Design</td>
+                </tr>
+
+                <tr>
+                    <td>Tuesday</td>
+                    <td>10:00 AM - 12:00 PM</td>
+                    <td>Artificial Intelligence</td>
+                </tr>
+
+                <tr>
+                    <td>Wednesday</td>
+                    <td>10:00 AM - 12:00 PM</td>
+                    <td>Database Management</td>
+                </tr>
+
+                <tr>
+                    <td>Thursday</td>
+                    <td>10:00 AM - 12:00 PM</td>
+                    <td>Internet Technology</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <section id="register">
+
+            <h2>Event Registration</h2>
+
+            <form>
+
+                <label for="name">Full Name:</label><br>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your full name"
+                       required>
+
+                <br><br>
+
+                <label for="studentid">Student ID:</label><br>
+
+                <input type="number"
+                       id="studentid"
+                       name="studentid"
+                       placeholder="Enter your student ID"
+                       required>
+
+                <br><br>
+
+                <label for="email">Email Address:</label><br>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
+
+                <br><br>
+
+                <label for="date">Preferred Date:</label><br>
+
+                <input type="date"
+                       id="date"
+                       name="date">
+
+                <br><br>
+
+                <p>Select Shift:</p>
+
+                <input type="radio"
+                       id="morning"
+                       name="shift"
+                       value="Morning">
+
+                <label for="morning">Morning</label>
+
+                <input type="radio"
+                       id="afternoon"
+                       name="shift"
+                       value="Afternoon">
+
+                <label for="afternoon">Afternoon</label>
+
+                <br><br>
+
+                <p>Interested Topics:</p>
+
+                <input type="checkbox"
+                       id="html"
+                       name="topic_html"
+                       value="HTML">
+
+                <label for="html">HTML</label>
+
+                <input type="checkbox"
+                       id="ai"
+                       name="topic_ai"
+                       value="AI">
+
+                <label for="ai">Artificial Intelligence</label>
+
+                <br><br>
+
+                <button type="submit">Register</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+<footer>
+    <p>Contact: <a href="mailto:cse@seu.edu.bd">cse@seu.edu.bd</a></p>
+    <p>Organized by the Department of Computer Science and Engineering, Southeast University</p>
+    <p>&copy; 2026 SEU Tech Event. All rights reserved.</p>
+</footer>
+</body>
+
+</html>
